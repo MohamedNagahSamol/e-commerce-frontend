@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #0000f0;
+  --p_color: #7b7b7b;
+  --bg_color: #f3f3f3;
+  --color_heading: #253237;
+  --border_color: #d5d5d5;
+}
+
+.prodect-page {
+  padding: 20px 0;
+}
+.prodect-page .container {
+  display: flex;
+  gap: 20px;
+}
+.prodect-page .container .image-item {
+  width: 450px;
+  height: 450px;
+  border: 1px solid var(--border_color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.prodect-page .container .image-item .big-image {
+  width: auto;
+  height: 70%;
+}
+.prodect-page .container .image-item .big-image img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.prodect-page .container .samll-images {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.prodect-page .container .samll-images {
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--border_color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.prodect-page .container .samll-images img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--border_color);
+  border-radius: 5px;
+}
+.prodect-page .container .details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.prodect-page .container .details .name {
+  font-size: 24px;
+  color: var(--color_heading);
+}
+.prodect-page .container .details .price {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.prodect-page .container .details .description {
+  font-size: 16px;
+  color: var(--color_text);
+  line-height: 1.5;
+}
+.prodect-page .container .details .category {
+  font-size: 17px;
+  color: var(--p_color);
+}
+.prodect-page .container .details .rating {
+  color: #7b7b7b;
+  font-size: 17px;
+}
+.prodect-page .container .details .icons {
+  display: flex;
+  gap: 25px;
+}
+.prodect-page .container .details .icons .icon {
+  padding: 10px 20px;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 40px;
+  
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prodect-page .container .details .icons .icon:hover {
+  background-color: #d5d5d5;
+}
+.prodect-page .container .details .icons .icon:active {
+  background-color: var(--primary-color-active);
+}
+.prodect-page .loding {
+  width: 30%;
+  height: 3vh;
+  margin-bottom: 20px;
+  background-color: #acacac;
+}
+.loding-image {
+  background-color: #acacac;
+}
+.isincart {
+  color: #f3f3f3 !important;
+  background-color: var(--primary-color) !important;
+  pointer-events: none;
+}

@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #0000f0;
+  --p_color: #7b7b7b;
+  --bg_color: #f3f3f3;
+  --color_heading: #253237;
+  --border_color: #d5d5d5;
+}
+.top-header .container {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header .logo {
+  width: 120px;
+}
+.top-header .search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border_color);
+  border-radius: 30px;
+  padding: 0;
+  width: 400px;
+  background-color: var(--bg_color);
+}
+.top-header .search-box input {
+  padding: 5px 15px 5px 20px;
+  width: 340px;
+  height: 37px;
+  background-color: var(--bg_color);
+  border-radius: 27px 0 0 27px;
+}
+.top-header .search-box button svg {
+  color: white;
+}
+.top-header .search-box button {
+  cursor: pointer;
+  font-size: 15px;
+  width: 60px;
+  padding: 5px;
+  background-color: var(--primary-color);
+  height: 37px;
+  border-radius: 0 27px 27px 0;
+}
+.top-header .header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.top-header .header-icons .icon {
+  position: relative;
+  cursor: pointer;
+}
+.top-header .header-icons .icon svg {
+  font-size: 30px;
+}
+.top-header .header-icons .icon .count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+.top-header .header-icons .icon:hover {
+  color: var(--primary-color);
+}
+.down-header {
+  background-color: var(--primary-color);
+}
+.down-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.down-header .nav {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+.down-header .nav .category-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 80px;
+  height: 100%;
+  width: 200px;
+  position: relative;
+}
+.down-header .nav .category-nav .category-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid var(--border_color);
+  border-radius: 5px;
+  display: flex;
+  max-height: 400px;
+  flex-direction: column;
+  padding: 10px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border_color) transparent;
+  scroll-behavior: smooth;
+  scroll-snap-type: none;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.3s ease;
+  background-color: #FFF;
+}
+.down-header .nav .category-nav .category-menu.show {
+  z-index: 1000;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.down-header .nav .category-nav .category-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 10px;
+}
+.down-header .nav .category-nav .category-btn svg {
+  color: white;
+}
+.down-header .nav .category-nav .category-btn p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.down-header .nav .category-nav .category-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+}
+
+.down-header .nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 50px;
+}
+
+.down-header .nav .nav-links {
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.down-header .nav .nav-links .nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.down-header .nav .nav-links .nav-link:hover {
+  background-color: #0b3e9cc7;
+  color: white;
+  border-radius: 25px;
+}
+.down-header .nav .category-menu .category-link {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1px solid var(--border_color);
+  transition: all 0.2s ease;
+}
+.down-header .nav .category-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+}
+.down-header .user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.down-header .user-actions .action-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.down-header .user-actions .action-link:hover {
+  background-color: var(--p_color);
+  color: white;
+  border-radius: 20px;
+}
+.down-header .user-actions svg {
+  font-size: 20px;
+  color: white;
+}
+.down-header .user-actions span {
+  color: white;
+  font-size: 16px;
+}
+.down-header .user-actions .action-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.down-header .nav .active {
+  background-color: #0b3e9cc7 !important;
+  color: white;
+  border-radius: 10px;
+  pointer-events: none;
+}

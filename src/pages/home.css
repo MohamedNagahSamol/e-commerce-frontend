@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #0000f0;
+  --p_color: #7b7b7b;
+  --bg_color: #f3f3f3;
+  --color_heading: #253237;
+  --border_color: #d5d5d5;
+}
+
+.container-slider {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.img-container {
+  width: 100%;
+  height: 400px;
+}
+.container-slider .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+.container-slider .content h4 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.container-slider .content h3 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+.container-slider .content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
+.container-slider .content .btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.container-slider .content .btn:hover {
+  background-color: #050594;
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.637);
+}
+.container-slider img {
+  width: 100%;
+  height: 100%;
+}
+.container-slider .mySwiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px;
+}
